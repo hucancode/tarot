@@ -34,7 +34,7 @@
         src={`/cards/${setId}-${cardId}.webp`}
       />
     </div>
-    <div class="prose flex w-full flex-col gap-4 md:h-full">
+    <div class="prose dark:prose-invert flex w-full flex-col gap-4 md:h-full">
       <div
         class="flex grow flex-col items-center rounded-xl border border-green-600 bg-green-200 p-4 text-blue-700 before:text-4xl before:content-['⯅']"
       >
