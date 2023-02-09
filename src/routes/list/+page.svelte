@@ -7,11 +7,11 @@
   <title>Umbala</title>
 </svelte:head>
 
-<div class="flex gap-4">
+<div class="container my-4 grid grid-cols-2 gap-10 md:grid-cols-5">
   {#each sets as set}
     <div>
-      <h2 class="text-xl font-bold">{set.name}</h2>
-      <ul>
+      <h2 class="border-b-4 text-xl font-bold">{set.name}</h2>
+      <ul class="flex flex-col gap-2 text-lg font-semibold">
         {#each set.cards as card}
           <li class="text-blue-800 hover:text-blue-600">
             <a
