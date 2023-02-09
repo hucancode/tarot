@@ -16,7 +16,7 @@
           <li class="text-blue-800 hover:text-blue-600">
             <a
               href={`${set.name.toLowerCase()}/${card.name
-                .replace(" ", "-")
+                .replaceAll(" ", "-")
                 .toLowerCase()}`}
             >
               {card.name}

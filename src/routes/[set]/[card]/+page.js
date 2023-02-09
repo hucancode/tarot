@@ -11,7 +11,7 @@ export function load({ params }) {
     for (var j = 0; j < set.cards.length; j++) {
       const card = set.cards[j];
       if (
-        params.card.toLowerCase() == card.name.replace(" ", "-").toLowerCase()
+        params.card.toLowerCase() == card.name.replaceAll(" ", "-").toLowerCase()
       ) {
         return {
           ...card,
