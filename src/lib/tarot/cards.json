@@ -5,14 +5,19 @@
       {
         "name": "The Fool",
         "meaning": {
-          "up": ["beginnings", "innocence", "spontaneity", "a free spirit"],
+          "upright": [
+            "beginnings",
+            "innocence",
+            "spontaneity",
+            "a free spirit"
+          ],
           "reverse": ["holding back", "recklessness", "risk-taking"]
         }
       },
       {
         "name": "The Magician",
         "meaning": {
-          "up": [
+          "upright": [
             "manifestation",
             "resourcefulness",
             "power",
@@ -24,14 +29,14 @@
       {
         "name": "High Priestess",
         "meaning": {
-          "up": [
-            "Intuition",
+          "upright": [
+            "intuition",
             "sacred knowledge",
             "divine feminine",
             "the subconscious mind"
           ],
           "reverse": [
-            "Secrets",
+            "secrets",
             "disconnected from intuition",
             "withdrawal and silence"
           ]
@@ -40,16 +45,27 @@
       {
         "name": "The Empress",
         "meaning": {
-          "up": ["Femininity", "beauty", "nature", "nurturing", "abundance"],
-          "reverse": ["Creative block", "dependence on others"]
+          "upright": [
+            "femininity",
+            "beauty",
+            "nature",
+            "nurturing",
+            "abundance"
+          ],
+          "reverse": ["creative block", "dependence on others"]
         }
       },
       {
         "name": "The Emperor",
         "meaning": {
-          "up": ["Authority", "establishment", "structure", "a father figure"],
+          "upright": [
+            "authority",
+            "establishment",
+            "structure",
+            "a father figure"
+          ],
           "reverse": [
-            "Domination",
+            "domination",
             "excessive control",
             "lack of discipline",
             "inflexibility"
@@ -59,15 +75,15 @@
       {
         "name": "The Hierophant",
         "meaning": {
-          "up": [
-            "Spiritual wisdom",
+          "upright": [
+            "spiritual wisdom",
             "religious beliefs",
             "conformity",
             "tradition",
             "institutions"
           ],
           "reverse": [
-            "Personal beliefs",
+            "personal beliefs",
             "freedom",
             "challenging the status quo"
           ]
@@ -76,7 +92,7 @@
       {
         "name": "The Lovers",
         "meaning": {
-          "up": [
+          "upright": [
             "love",
             "harmony",
             "relationships",
@@ -94,22 +110,28 @@
       {
         "name": "The Chariot",
         "meaning": {
-          "up": ["Control", "willpower", "success", "action", "determination"],
-          "reverse": ["Self-discipline", "opposition", "lack of direction"]
+          "upright": [
+            "control",
+            "willpower",
+            "success",
+            "action",
+            "determination"
+          ],
+          "reverse": ["self-discipline", "opposition", "lack of direction"]
         }
       },
       {
         "name": "Strength",
         "meaning": {
-          "up": [
-            "Strength",
+          "upright": [
+            "strength",
             "courage",
             "persuation",
             "influence",
             "compassion"
           ],
           "reverse": [
-            "Inner strength",
+            "inner strength",
             "self-doubt",
             "low energy",
             "raw emotion"
@@ -119,68 +141,74 @@
       {
         "name": "The Hermit",
         "meaning": {
-          "up": [
-            "Soul-searching",
+          "upright": [
+            "soul-searching",
             "introspection",
             "being alone",
             "inner guidance"
           ],
-          "reverse": ["Isolation", "loneliness", "withdrawal"]
+          "reverse": ["isolation", "loneliness", "withdrawal"]
         }
       },
       {
         "name": "Wheel of Fortune",
         "meaning": {
-          "up": [
-            "Good luck",
+          "upright": [
+            "good luck",
             "karma",
             "life cycles",
             "destiny",
             "a turning point"
           ],
-          "reverse": ["Bad luck", "resistance to change", "breaking cycles"]
+          "reverse": ["bad luck", "resistance to change", "breaking cycles"]
         }
       },
       {
         "name": "Justice",
         "meaning": {
-          "up": ["Justice", "fairness", "truth", "cause and effect", "law"],
-          "reverse": ["Unfairness", "lack of accountability", "dishonesty"]
+          "upright": [
+            "justice",
+            "fairness",
+            "truth",
+            "cause and effect",
+            "law"
+          ],
+          "reverse": ["unfairness", "lack of accountability", "dishonesty"]
         }
       },
       {
         "name": "The Hanged Man",
         "meaning": {
-          "up": ["Balance", "moderation", "patience", "purpose"],
-          "reverse": ["Imbalance", "excess", "self-healing", "re-alignment"]
+          "upright": ["balance", "moderation", "patience", "purpose"],
+          "reverse": ["imbalance", "excess", "self-healing", "re-alignment"]
         }
       },
       {
         "name": "Death",
         "meaning": {
-          "up": ["Endings", "change", "transformation", "transition"],
-          "reverse": ["Resistance to change", "personal transformation"]
+          "upright": ["endings", "change", "transformation", "transition"],
+          "reverse": ["resistance to change", "personal transformation"]
         }
       },
       {
         "name": "Temperance",
         "meaning": {
-          "up": ["Balance", "moderation", "patience", "purpose"],
-          "reverse": ["Imbalance", "excess", "self-healing", "re-alignment"]
+          "upright": ["balance", "moderation", "patience", "purpose"],
+          "reverse": ["imbalance", "excess", "self-healing", "re-alignment"]
         }
       },
       {
         "name": "The Devil",
         "meaning": {
-          "up": [
-            "Shadow self",
+          "upright": [
+            "shadow self",
             "attachment",
             "addiction",
             "restriction",
             "sexuality"
           ],
           "reverse": [
-            "Releasing limiting beliefs",
+            "releasing limiting beliefs",
             "exploring dark thoughts",
             "detachment"
           ]
@@ -189,15 +217,15 @@
       {
         "name": "The Tower",
         "meaning": {
-          "up": [
-            "Sudden change",
+          "upright": [
+            "sudden change",
             "upheaval",
             "chaos",
             "revelation",
             "awakening"
           ],
           "reverse": [
-            "Personal transformation",
+            "personal transformation",
             "fear of change",
             "averting disaster"
           ]
@@ -206,36 +234,42 @@
       {
         "name": "The Star",
         "meaning": {
-          "up": ["Hope", "faith", "purpose", "renewal", "spirituality"],
-          "reverse": ["Lack of faith", "despair", "self-trust", "disconnection"]
+          "upright": ["hope", "faith", "purpose", "renewal", "spirituality"],
+          "reverse": ["lack of faith", "despair", "self-trust", "disconnection"]
         }
       },
       {
         "name": "The Moon",
         "meaning": {
-          "up": ["Illusion", "fear", "anxiety", "subconscious", "intuition"],
-          "reverse": ["Release of fear", "repressed emotion", "inner confusion"]
+          "upright": [
+            "illusion",
+            "fear",
+            "anxiety",
+            "subconscious",
+            "intuition"
+          ],
+          "reverse": ["release of fear", "repressed emotion", "inner confusion"]
         }
       },
       {
         "name": "The Sun",
         "meaning": {
-          "up": ["Positivity", "fun", "warmth", "success", "vitality"],
-          "reverse": ["Inner child", "feeling down", "overly optimistic"]
+          "upright": ["positivity", "fun", "warmth", "success", "vitality"],
+          "reverse": ["inner child", "feeling down", "overly optimistic"]
         }
       },
       {
         "name": "Judgement",
         "meaning": {
-          "up": ["Judgement", "rebirth", "inner calling", "absolution"],
-          "reverse": ["Self-doubt", "inner critic", "ignoring the call"]
+          "upright": ["judgement", "rebirth", "inner calling", "absolution"],
+          "reverse": ["self-doubt", "inner critic", "ignoring the call"]
         }
       },
       {
         "name": "The World",
         "meaning": {
-          "up": ["Completion", "integration", "accomplishment", "travel"],
-          "reverse": ["Seeking personal closure", "short-cuts", "delays"]
+          "upright": ["completion", "integration", "accomplishment", "travel"],
+          "reverse": ["seeking personal closure", "short-cuts", "delays"]
         }
       }
     ]
@@ -246,23 +280,28 @@
       {
         "name": "Ace of Cups",
         "meaning": {
-          "up": ["Love", "new relationships", "compassion", "creativity"],
-          "reverse": ["Self-love", "intuition", "repressed emotions"]
+          "upright": ["love", "new relationships", "compassion", "creativity"],
+          "reverse": ["self-love", "intuition", "repressed emotions"]
         }
       },
       {
         "name": "Two of Cups",
         "meaning": {
-          "up": ["unified love", "partnership", "mutual attraction"],
-          "reverse": ["Self-love", "break-ups", "disharmony", "distrust"]
+          "upright": ["unified love", "partnership", "mutual attraction"],
+          "reverse": ["self-love", "break-ups", "disharmony", "distrust"]
         }
       },
       {
         "name": "Three of Cups",
         "meaning": {
-          "up": ["Celebration", "friendship", "creativity", "collaborations"],
+          "upright": [
+            "celebration",
+            "friendship",
+            "creativity",
+            "collaborations"
+          ],
           "reverse": [
-            "Independence",
+            "independence",
             "alone time",
             "hardcore partying",
             "three’s a crowd"
@@ -272,28 +311,28 @@
       {
         "name": "Four of Cups",
         "meaning": {
-          "up": ["Meditation", "contemplation", "apathy", "re-evaluation"],
-          "reverse": ["Retreat", "withdrawal", "checking in for alignment"]
+          "upright": ["meditation", "contemplation", "apathy", "re-evaluation"],
+          "reverse": ["retreat", "withdrawal", "checking in for alignment"]
         }
       },
       {
         "name": "Five of Cups",
         "meaning": {
-          "up": ["Regret", "failure"],
-          "reverse": ["Personal setbacks", "selfforgiveness", "moving on"]
+          "upright": ["regret", "failure"],
+          "reverse": ["personal setbacks", "selfforgiveness", "moving on"]
         }
       },
       {
         "name": "Six of Cups",
         "meaning": {
-          "up": [
-            "Revisiting the past",
+          "upright": [
+            "revisiting the past",
             "childhood memories",
             "innocence",
             "joy"
           ],
           "reverse": [
-            "Living in the past",
+            "living in the past",
             "forgiveness",
             "lacking playfulness"
           ]
@@ -302,16 +341,26 @@
       {
         "name": "Seven of Cups",
         "meaning": {
-          "up": ["Opportunities", "choices", "wishful thinking", "illusion"],
-          "reverse": ["Alignment", "personal values", "overwhelmed by choices"]
+          "upright": [
+            "opportunities",
+            "choices",
+            "wishful thinking",
+            "illusion"
+          ],
+          "reverse": ["alignment", "personal values", "overwhelmed by choices"]
         }
       },
       {
         "name": "Eight of Cups",
         "meaning": {
-          "up": ["Disappointment", "abandonment", "withdrawal", "escapism"],
+          "upright": [
+            "disappointment",
+            "abandonment",
+            "withdrawal",
+            "escapism"
+          ],
           "reverse": [
-            "Trying one more time",
+            "trying one more time",
             "indecision",
             "aimless drifting",
             "walking away"
@@ -321,9 +370,14 @@
       {
         "name": "Nine of Cups",
         "meaning": {
-          "up": ["Contentment", "satisfaction", "gratitude", "wish come true"],
+          "upright": [
+            "contentment",
+            "satisfaction",
+            "gratitude",
+            "wish come true"
+          ],
           "reverse": [
-            "Inner happiness",
+            "inner happiness",
             "materialism",
             "dissatisfaction",
             "indulgence"
@@ -333,14 +387,14 @@
       {
         "name": "Ten of Cups",
         "meaning": {
-          "up": [
-            "Divine love",
+          "upright": [
+            "divine love",
             "blissful relationships",
             "harmony",
             "alignment"
           ],
           "reverse": [
-            "Disconnection",
+            "disconnection",
             "misaligned values",
             "struggling relationships"
           ]
@@ -349,14 +403,14 @@
       {
         "name": "Page of Cups",
         "meaning": {
-          "up": [
-            "Creative opportunities",
+          "upright": [
+            "creative opportunities",
             "intuitive messages",
             "curiosity",
             "possibility"
           ],
           "reverse": [
-            "New ideas",
+            "new ideas",
             "doubting intuition",
             "creative blocks",
             "emotional immaturity"
@@ -366,9 +420,15 @@
       {
         "name": "Knight of Cups",
         "meaning": {
-          "up": ["Creativity", "romance", "charm", "imagination", "beauty"],
+          "upright": [
+            "creativity",
+            "romance",
+            "charm",
+            "imagination",
+            "beauty"
+          ],
           "reverse": [
-            "Overactive imagination",
+            "overactive imagination",
             "unrealistic",
             "jealous",
             "moody"
@@ -378,15 +438,15 @@
       {
         "name": "Queen of Cups",
         "meaning": {
-          "up": [
-            "Compassionate",
+          "upright": [
+            "compassionate",
             "caring",
             "emotionally stable",
             "intuitive",
             "in flow"
           ],
           "reverse": [
-            "Inner feelings",
+            "inner feelings",
             "self-care",
             "self-love",
             "co-dependency"
@@ -396,9 +456,9 @@
       {
         "name": "King of Cups",
         "meaning": {
-          "up": ["Emotionally balanced", "compassionate", "diplomatic"],
+          "upright": ["emotionally balanced", "compassionate", "diplomatic"],
           "reverse": [
-            "Self-compassion",
+            "self-compassion",
             "inner feelings",
             "moodiness",
             "emotionally manipulative"
@@ -413,95 +473,100 @@
       {
         "name": "Ace of Pentacles",
         "meaning": {
-          "up": [
-            "A new financial career opportunity",
+          "upright": [
+            "a new financial career opportunity",
             "manifestation",
             "abundance"
           ],
-          "reverse": ["Lost opportunity", "lack of planning and foresight"]
+          "reverse": ["lost opportunity", "lack of planning and foresight"]
         }
       },
       {
         "name": "Two of Pentacles",
         "meaning": {
-          "up": [
-            "Multiple priorities",
+          "upright": [
+            "multiple priorities",
             "time management",
             "prioritization",
             "adaptability"
           ],
-          "reverse": ["Over-committed", "disorganization", "reprioritization"]
+          "reverse": ["over-committed", "disorganization", "reprioritization"]
         }
       },
       {
         "name": "Three of Pentacles",
         "meaning": {
-          "up": ["Teamwork", "collaboration", "learning", "implementation"],
-          "reverse": ["Disharmony", "misalignment", "working alone"]
+          "upright": [
+            "teamwork",
+            "collaboration",
+            "learning",
+            "implementation"
+          ],
+          "reverse": ["disharmony", "misalignment", "working alone"]
         }
       },
       {
         "name": "Four of Pentacles",
         "meaning": {
-          "up": [
-            "Saving money",
+          "upright": [
+            "saving money",
             "security",
             "conservatism",
             "scarcity",
             "control"
           ],
-          "reverse": ["Over-spending", "greed", "self-protection"]
+          "reverse": ["over-spending", "greed", "self-protection"]
         }
       },
       {
         "name": "Five of Pentacles",
         "meaning": {
-          "up": [
-            "Financial loss",
+          "upright": [
+            "financial loss",
             "poverty",
             "lack mindset",
             "isolation",
             "worry"
           ],
-          "reverse": ["Recovery from financial loss", "spiritual poverty"]
+          "reverse": ["recovery from financial loss", "spiritual poverty"]
         }
       },
       {
         "name": "Six of Pentacles",
         "meaning": {
-          "up": [
-            "Giving",
+          "upright": [
+            "giving",
             "receiving",
             "sharing wealth",
             "generosity",
             "charity"
           ],
-          "reverse": ["Self-care", "unpaid debts", "one-sided charity"]
+          "reverse": ["self-care", "unpaid debts", "one-sided charity"]
         }
       },
       {
         "name": "Seven of Pentacles",
         "meaning": {
-          "up": [
-            "Long-term view",
+          "upright": [
+            "long-term view",
             "sustainable results",
             "perseverance",
             "investment"
           ],
-          "reverse": ["Lack of long-term vision", "limited success or reward"]
+          "reverse": ["lack of long-term vision", "limited success or reward"]
         }
       },
       {
         "name": "Eight of Pentacles",
         "meaning": {
-          "up": [
-            "Apprenticeship",
+          "upright": [
+            "apprenticeship",
             "repetitive tasks",
             "mastery",
             "skill development"
           ],
           "reverse": [
-            "Self-development",
+            "self-development",
             "perfectionism",
             "misdirected activity"
           ]
@@ -510,32 +575,36 @@
       {
         "name": "Nine of Pentacles",
         "meaning": {
-          "up": [
-            "Abundance",
+          "upright": [
+            "abundance",
             "luxury",
             "self sufficiency",
             "financial independence"
           ],
-          "reverse": ["Self-worth", "over-investment in work", "hustling"]
+          "reverse": ["self-worth", "over-investment in work", "hustling"]
         }
       },
       {
         "name": "Ten of Pentacles",
         "meaning": {
-          "up": [
-            "Wealth",
+          "upright": [
+            "wealth",
             "finalcial security",
             "family",
             "long-term success",
             "contribution"
           ],
-          "reverse": ["The dark side of wealth", "financial failure or loss"]
+          "reverse": ["the dark side of wealth", "financial failure or loss"]
         }
       },
       {
         "name": "Page of Pentacles",
         "meaning": {
-          "up": ["manifestation", "financial opportunity", "skill development"],
+          "upright": [
+            "manifestation",
+            "financial opportunity",
+            "skill development"
+          ],
           "reverse": [
             "lack of progress",
             "procastination",
@@ -546,9 +615,9 @@
       {
         "name": "Knight of Pentacles",
         "meaning": {
-          "up": ["Hard work", "productivity", "routine", "conservatism"],
+          "upright": ["hard work", "productivity", "routine", "conservatism"],
           "reverse": [
-            "Self-discipline",
+            "self-discipline",
             "boredom",
             "feeling stuck",
             "perfectionism"
@@ -558,14 +627,14 @@
       {
         "name": "Queen of Pentacles",
         "meaning": {
-          "up": [
-            "Nurturing",
+          "upright": [
+            "nurturing",
             "practical",
             "providing financially",
             "a working parent"
           ],
           "reverse": [
-            "Financial independence",
+            "financial independence",
             "self-care",
             "work-home conflict"
           ]
@@ -574,8 +643,8 @@
       {
         "name": "King of Pentacles",
         "meaning": {
-          "up": [
-            "Wealth",
+          "upright": [
+            "wealth",
             "business",
             "leadership",
             "security",
@@ -583,7 +652,7 @@
             "abundance"
           ],
           "reverse": [
-            "Financially inept",
+            "financially inept",
             "obsessed with wealth status",
             "stubborn"
           ]
@@ -597,9 +666,14 @@
       {
         "name": "Ace of Swords",
         "meaning": {
-          "up": ["Breakthroughs", "new ideas", "mental clarity", "success"],
+          "upright": [
+            "breakthroughs",
+            "new ideas",
+            "mental clarity",
+            "success"
+          ],
           "reverse": [
-            "Inner clarity",
+            "inner clarity",
             "re-thinking an idea",
             "clouded judgement"
           ]
@@ -608,13 +682,13 @@
       {
         "name": "Two of Swords",
         "meaning": {
-          "up": [
+          "upright": [
             "difficult decisions",
             "weighing up options",
             "an impasse avoidance"
           ],
           "reverse": [
-            "Indecision",
+            "indecision",
             "confusion",
             "information overload",
             "stalemate"
@@ -624,9 +698,15 @@
       {
         "name": "Three of Swords",
         "meaning": {
-          "up": ["Heartbreak", "emotional pain", "sorrow", "grief", "hurt"],
+          "upright": [
+            "heartbreak",
+            "emotional pain",
+            "sorrow",
+            "grief",
+            "hurt"
+          ],
           "reverse": [
-            "Negative self-talk",
+            "negative self-talk",
             "releasing pain",
             "optimism",
             "forgiveness"
@@ -636,15 +716,15 @@
       {
         "name": "Four of Swords",
         "meaning": {
-          "up": [
-            "Rest",
+          "upright": [
+            "rest",
             "relaxation",
             "meditation",
             "contemplation",
             "recuperation"
           ],
           "reverse": [
-            "Exhaustion",
+            "exhaustion",
             "burn-out",
             "deep contemplation",
             "stagnation"
@@ -654,26 +734,26 @@
       {
         "name": "Five of Swords",
         "meaning": {
-          "up": [
+          "upright": [
             "conflict disagreements",
             "competition",
             "defeat",
             "winning at all costs"
           ],
-          "reverse": ["Reconciliation", "making amends", "past resentment"]
+          "reverse": ["reconciliation", "making amends", "past resentment"]
         }
       },
       {
         "name": "Six of Swords",
         "meaning": {
-          "up": [
-            "Transition",
+          "upright": [
+            "transition",
             "change",
             "rite of passage",
             "releasing baggage"
           ],
           "reverse": [
-            "Personal transition",
+            "personal transition",
             "resistance to change",
             "unfinished business"
           ]
@@ -682,26 +762,26 @@
       {
         "name": "Seven of Swords",
         "meaning": {
-          "up": [
-            "Betrayal",
+          "upright": [
+            "betrayal",
             "deception",
             "getting away with something",
             "acting strategically"
           ],
-          "reverse": ["Imposter syndrome", "self-deceit", "keeping secrets"]
+          "reverse": ["imposter syndrome", "self-deceit", "keeping secrets"]
         }
       },
       {
         "name": "Eight of Swords",
         "meaning": {
-          "up": [
-            "Negative thoughts",
+          "upright": [
+            "negative thoughts",
             "selfimposed restriction",
             "imprisonment",
             "victim mentality"
           ],
           "reverse": [
-            "Self-limiting beliefs",
+            "self-limiting beliefs",
             "inner critic",
             "releasing negative thoughts",
             "open to new perspective"
@@ -711,9 +791,9 @@
       {
         "name": "Nine of Swords",
         "meaning": {
-          "up": ["Anxiety", "worry", "fear", "depression", "nightmares"],
+          "upright": ["anxiety", "worry", "fear", "depression", "nightmares"],
           "reverse": [
-            "Inner turmoil",
+            "inner turmoil",
             "deepseated fears",
             "secrets",
             "releasing worry"
@@ -723,27 +803,27 @@
       {
         "name": "Ten of Swords",
         "meaning": {
-          "up": [
-            "Painful endings",
+          "upright": [
+            "painful endings",
             "deep wounds",
             "betrayal",
             "loss",
             "crisis"
           ],
-          "reverse": ["Recovery", "regeneration", "resisting an inevitable end"]
+          "reverse": ["recovery", "regeneration", "resisting an inevitable end"]
         }
       },
       {
         "name": "Page of Swords",
         "meaning": {
-          "up": [
-            "New ideas",
+          "upright": [
+            "new ideas",
             "curiosity",
             "thirst for knowledge",
             "new ways of communicating"
           ],
           "reverse": [
-            "Self-expression",
+            "self-expression",
             "all talk and no action",
             "haphazard action",
             "haste"
@@ -753,33 +833,38 @@
       {
         "name": "Knight of Swords",
         "meaning": {
-          "up": [
-            "Ambitious",
+          "upright": [
+            "ambitious",
             "actionoriented",
             "driven to succeed",
             "fast-thinking"
           ],
-          "reverse": ["Restless", "unfocused", "impulsive", "burn-out"]
+          "reverse": ["restless", "unfocused", "impulsive", "burn-out"]
         }
       },
       {
         "name": "Queen of Swords",
         "meaning": {
-          "up": [
-            "Independent",
+          "upright": [
+            "independent",
             "unbiased judgement",
             "clear boundaries",
             "direct communication"
           ],
-          "reverse": ["Overly emotional", "easily influenced", "cold-hearted"]
+          "reverse": ["overly emotional", "easily influenced", "cold-hearted"]
         }
       },
       {
         "name": "King of Swords",
         "meaning": {
-          "up": ["Mental clarity", "intellectual power", "authority", "truth"],
+          "upright": [
+            "mental clarity",
+            "intellectual power",
+            "authority",
+            "truth"
+          ],
           "reverse": [
-            "Quiet power",
+            "quiet power",
             "inner truth",
             "misuse of power",
             "manipulation"
@@ -794,23 +879,29 @@
       {
         "name": "Ace of Wands",
         "meaning": {
-          "up": ["Inspiration", "power", "creation", "beginnings", "potential"],
-          "reverse": ["Delays", "lack of motivation", "weighed down"]
+          "upright": [
+            "inspiration",
+            "power",
+            "creation",
+            "beginnings",
+            "potential"
+          ],
+          "reverse": ["delays", "lack of motivation", "weighed down"]
         }
       },
       {
         "name": "Two of Wands",
         "meaning": {
-          "up": ["Future planning", "progress", "decisions", "discovery"],
-          "reverse": ["Fear of unknown", "lack of planning"]
+          "upright": ["future planning", "progress", "decisions", "discovery"],
+          "reverse": ["fear of unknown", "lack of planning"]
         }
       },
       {
         "name": "Three of Wands",
         "meaning": {
-          "up": ["Preparation", "foresight", "enterprise", "expansion"],
+          "upright": ["preparation", "foresight", "enterprise", "expansion"],
           "reverse": [
-            "Lack of foresight",
+            "lack of foresight",
             "delays",
             "obstacles to long-term goals"
           ]
@@ -819,15 +910,21 @@
       {
         "name": "Four of Wands",
         "meaning": {
-          "up": ["Celebration", "harmony", "marriage", "home", "community"],
-          "reverse": ["Breakdown in communication", "transition"]
+          "upright": [
+            "celebration",
+            "harmony",
+            "marriage",
+            "home",
+            "community"
+          ],
+          "reverse": ["breakdown in communication", "transition"]
         }
       },
       {
         "name": "Five of Wands",
         "meaning": {
-          "up": [
-            "Disagreement",
+          "upright": [
+            "disagreement",
             "competition",
             "strife",
             "tension",
@@ -839,9 +936,14 @@
       {
         "name": "Six of Wands",
         "meaning": {
-          "up": ["Public recognition", "victory", "progress", "self-confident"],
+          "upright": [
+            "public recognition",
+            "victory",
+            "progress",
+            "self-confident"
+          ],
           "reverse": [
-            "Egotism",
+            "egotism",
             "disrepute",
             "lack of confident",
             "fall from grace"
@@ -851,70 +953,81 @@
       {
         "name": "Seven of Wands",
         "meaning": {
-          "up": ["Challenge", "competition", "perseverance"],
-          "reverse": ["Giving up", "overwhelmed", "overly protective"]
+          "upright": ["challenge", "competition", "perseverance"],
+          "reverse": ["giving up", "overwhelmed", "overly protective"]
         }
       },
       {
         "name": "Eight of Wands",
         "meaning": {
-          "up": ["Speed", "action", "air travel", "movement", "swift change"],
-          "reverse": ["Delays", "frustration", "holding off"]
+          "upright": [
+            "speed",
+            "action",
+            "air travel",
+            "movement",
+            "swift change"
+          ],
+          "reverse": ["delays", "frustration", "holding off"]
         }
       },
       {
         "name": "Nine of Wands",
         "meaning": {
-          "up": ["Courage", "persistence", "test of faith", "resilience"],
-          "reverse": ["On edge", "defensive", "hesitant", "paranoia"]
+          "upright": ["courage", "persistence", "test of faith", "resilience"],
+          "reverse": ["on edge", "defensive", "hesitant", "paranoia"]
         }
       },
       {
         "name": "Ten of Wands",
         "meaning": {
-          "up": [
-            "Burden",
+          "upright": [
+            "burden",
             "responsibility",
             "hard work",
             "stress",
             "achievement"
           ],
-          "reverse": ["Taking on too much", "avoiding responsibility"]
+          "reverse": ["taking on too much", "avoiding responsibility"]
         }
       },
       {
         "name": "Page of Wands",
         "meaning": {
-          "up": ["Enthusiasm", "exploration", "discovery", "free spirit"],
-          "reverse": ["Setbacks to new ideas", "pessimism", "lack of direction"]
+          "upright": ["enthusiasm", "exploration", "discovery", "free spirit"],
+          "reverse": ["setbacks to new ideas", "pessimism", "lack of direction"]
         }
       },
       {
         "name": "Knight of Wands",
         "meaning": {
-          "up": [
-            "Energy",
+          "upright": [
+            "energy",
             "passion",
             "lust",
             "action",
             "adventure",
             "impulsiveness"
           ],
-          "reverse": ["Haste", "scattered energy", "delays", "frustration"]
+          "reverse": ["haste", "scattered energy", "delays", "frustration"]
         }
       },
       {
         "name": "Queen of Wands",
         "meaning": {
-          "up": ["Exuberance", "warmth", "vibrancy", "determination"],
-          "reverse": ["Shrinking violet", "aggressive", "demanding"]
+          "upright": ["exuberance", "warmth", "vibrancy", "determination"],
+          "reverse": ["shrinking violet", "aggressive", "demanding"]
         }
       },
       {
         "name": "King of Wands",
         "meaning": {
-          "up": ["Natural-born leader", "vision", "entrepreneur", "honour"],
-          "reverse": ["Impulsiveness", "haste", "ruthless", "high expectations"]
+          "upright": [
+            "natural-born leader",
+            "vision",
+            "entrepreneur",
+            "honour"
+          ],
+          "reverse": ["impulsiveness", "haste", "ruthless", "high expectations"]
         }
       }
     ]

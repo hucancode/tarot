@@ -1,16 +1,12 @@
-<script context="module">
-  export const prerender = true;
-</script>
-
 <script>
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
-  import WavingHand from "$lib/components/waving-hand.svelte";
-  import sets from "$lib/tarot/cards.json";
   import { _ } from "svelte-i18n";
+  import sets from "$lib/tarot/cards.json";
 
   let setId = 0;
   let cardId = 0;
+  $: card = sets[setId].cards[cardId];
   let loading = true;
   onMount(() => {
     setId = Math.floor(Math.random() * sets.length);
@@ -24,15 +20,46 @@
 <svelte:head>
   <title>Umbala</title>
 </svelte:head>
+
 {#if !loading}
   <div
     transition:fade
-    class="flex h-screen w-screen 
-	items-center gap-7 bg-gray-100 text-black
-	dark:bg-gray-800 dark:text-white"
+    class="container flex max-w-screen-md flex-col items-center 
+	gap-4 overflow-hidden md:flex-row"
   >
-    <img class="max-h-full" src={`/cards/${setId}-${cardId}.jpg`} />
-    <code>
+    <div class="aspect-[2.5/3.5]">
+      <img
+        alt={card.name}
+        class="max-h-full w-auto object-contain"
+        src={`/cards/${setId}-${cardId}.webp`}
+      />
+    </div>
+    <div class="prose flex w-full flex-col gap-4 md:h-full">
+      <div
+        class="flex grow flex-col items-center rounded-xl border border-green-600 bg-green-200 p-4 text-blue-700 before:text-4xl before:content-['⯅']"
+      >
+        <div
+          class="flex h-full w-full grow flex-wrap items-center justify-center gap-2"
+        >
+          {#each card.meaning.upright as text}
+            <span>{text}</span>
+          {/each}
+        </div>
+      </div>
+      <h3 class="text-center text-3xl font-bold uppercase">{card.name}</h3>
+      <div
+        class="flex grow flex-col items-center rounded-xl border border-green-600 bg-green-200 p-4 text-gray-700 after:text-4xl after:content-['⯆']"
+      >
+        <div
+          class="flex h-full w-full grow flex-wrap items-center justify-center gap-2"
+        >
+          {#each card.meaning.reverse as text}
+            <span>{text}</span>
+          {/each}
+        </div>
+      </div>
+    </div>
+    <code class="hidden">
       {JSON.stringify(sets[setId].cards[cardId])}
     </code>
   </div>

@@ -4,9 +4,16 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply grid h-screen w-full place-items-center 
+    bg-white text-gray-800 antialiased duration-500 dark:bg-gray-900 dark:text-white;
+    font-family: "Poppins", "Noto Sans JP", sans-serif;
+  }
+
   .flex-col-center {
     @apply flex flex-col items-center justify-center;
   }
+
   .flex-center,
   .flex-row-center {
     @apply flex items-center justify-center;
