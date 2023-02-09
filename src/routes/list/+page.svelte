@@ -7,7 +7,7 @@
   <title>Umbala</title>
 </svelte:head>
 
-<div class="container my-4 grid grid-cols-2 gap-10 md:grid-cols-5">
+<main class="container my-4 grid grid-cols-2 gap-10 md:grid-cols-5">
   {#each sets as set}
     <div>
       <h2 class="border-b-4 text-xl font-bold">{set.name}</h2>
@@ -26,4 +26,11 @@
       </ul>
     </div>
   {/each}
-</div>
+</main>
+
+<footer>
+  <a
+    class="text-lg font-bold uppercase text-blue-600 hover:text-blue-500"
+    href="/">Home Page</a
+  >
+</footer>

@@ -22,17 +22,25 @@
 </svelte:head>
 
 {#if !loading}
-  <div
+  <main
     transition:fade
     class="container flex max-w-screen-md flex-col items-center 
 	gap-4 overflow-hidden md:flex-row"
   >
-    <div class="aspect-[2.5/3.5]">
+    <div class="flex aspect-[2.5/3.5] flex-col items-center gap-2">
       <img
         alt={card.name}
         class="max-h-full w-auto object-contain"
         src={`/cards/${setId}-${cardId}.webp`}
       />
+      <a
+        class="uppercase text-blue-600 hover:text-blue-500"
+        href={`/${sets[setId].name.toLowerCase()}/${card.name
+          .replaceAll(" ", "-")
+          .toLowerCase()}`}
+      >
+        Link to this card
+      </a>
     </div>
     <div class="prose flex w-full flex-col gap-4 dark:prose-invert md:h-full">
       <div
@@ -59,13 +67,11 @@
         </div>
       </div>
     </div>
-    <code class="hidden">
-      {JSON.stringify(sets[setId].cards[cardId])}
-    </code>
-  </div>
+  </main>
 {/if}
 
 <footer>
+  <br />
   <a
     class="text-lg font-bold uppercase text-blue-600 hover:text-blue-500"
     href="/list">Card list</a

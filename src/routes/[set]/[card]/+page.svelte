@@ -7,7 +7,7 @@
   <title>{data.name}</title>
 </svelte:head>
 
-<div
+<main
   class="container flex max-w-screen-md flex-col items-center 
 gap-4 overflow-hidden md:flex-row"
 >
@@ -43,4 +43,11 @@ gap-4 overflow-hidden md:flex-row"
       </div>
     </div>
   </div>
-</div>
+</main>
+
+<footer>
+  <a
+    class="text-lg font-bold uppercase text-blue-600 hover:text-blue-500"
+    href="/list">Card list</a
+  >
+</footer>
