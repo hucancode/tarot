@@ -5,9 +5,13 @@
 
 @layer base {
   body {
-    @apply grid h-screen w-full place-items-center 
+    @apply grid min-h-screen w-full place-items-center 
     bg-white text-gray-800 antialiased duration-500 dark:bg-gray-900 dark:text-white;
     font-family: "Poppins", "Noto Sans JP", sans-serif;
+  }
+
+  footer {
+    @apply mt-10 mb-5;
   }
 
   .flex-col-center {
