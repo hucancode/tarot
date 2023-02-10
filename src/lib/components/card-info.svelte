@@ -4,6 +4,8 @@
   import IconDown from "~icons/ph/caret-double-down-duotone";
   export let card;
   export let revealed = false;
+  export let upright = true;
+  export let reverse = true;
 </script>
 
 <div class="prose flex w-full flex-col gap-4 dark:prose-invert md:w-1/2">
@@ -13,7 +15,7 @@
     <IconUp />
     <div class="grid h-full w-full grow place-items-center text-center">
       {#if revealed}
-        <div transition:fade>
+        <div transition:fade class:dim={!upright}>
           {card.meaning.upright.join(", ")}
         </div>
       {/if}
@@ -23,6 +25,11 @@
     {#if revealed}
       <div transition:fade>
         {card.name}
+        {upright && !reverse
+          ? " (UPRIGHT)"
+          : reverse && !upright
+          ? " (REVERSED)"
+          : ""}
       </div>
     {:else}
       ???????????
@@ -33,7 +40,7 @@
   >
     <div class="grid h-full w-full grow place-items-center text-center">
       {#if revealed}
-        <div transition:fade>
+        <div transition:fade class:dim={!reverse}>
           {card.meaning.reverse.join(", ")}
         </div>
       {/if}
@@ -41,3 +48,9 @@
     <IconDown />
   </div>
 </div>
+
+<style>
+  .dim {
+    @apply opacity-10;
+  }
+</style>
