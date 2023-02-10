@@ -20,7 +20,7 @@
 
   onMount(() => {
     if (revealed) {
-      cardArt.src = card_front;
+      cardArt.src = cardFront;
       return;
     }
     cardArt.src = CARD_BACK;
@@ -53,7 +53,7 @@
 </script>
 
 <svelte:head>
-  <link rel="prefetch" href={cardFront} />
+  <link rel="prefetch" href={cardFront}/>
 </svelte:head>
 
 <button
