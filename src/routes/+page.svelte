@@ -21,7 +21,16 @@
     const card = sets[setId].cards[cardId];
     upright = Math.random() > 0.5;
     console.log(card);
-    // addDrawSession([card], 4);
+    addDrawSession(
+      [
+        {
+          set: setId,
+          card: cardId,
+          upright: upright,
+        },
+      ],
+      4
+    );
     loading = false;
   });
 </script>
