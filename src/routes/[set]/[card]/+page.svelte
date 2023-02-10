@@ -14,8 +14,8 @@
   class="container flex max-w-screen-md flex-col items-stretch gap-4
 overflow-hidden p-4 md:flex-row"
 >
-  <Card card={data} setId={data.setId} cardId={data.cardId} />
-  <CardInfo card={data} />
+  <Card card={data} setId={data.setId} cardId={data.cardId} revealed={true} />
+  <CardInfo card={data} revealed={true} />
 </main>
 
 <footer>

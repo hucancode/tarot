@@ -5,17 +5,13 @@
 
 @layer base {
   body {
-    @apply flex min-h-screen w-full flex-col items-center
+    @apply flex min-h-screen w-full flex-col items-center justify-between
     bg-white text-gray-800 antialiased duration-500 dark:bg-gray-900 dark:text-white;
     font-family: "Poppins", "Noto Sans JP", sans-serif;
   }
 
-  main {
-    @apply grow;
-  }
-
   footer {
-    @apply mt-10 mb-5 text-center;
+    @apply my-2 text-center;
   }
 
   .flex-col-center {

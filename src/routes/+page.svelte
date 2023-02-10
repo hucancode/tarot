@@ -8,6 +8,7 @@
 
   let setId = 0;
   let cardId = 0;
+  let revealed = false;
   $: card = sets[setId].cards[cardId];
   let loading = true;
   onMount(() => {
@@ -26,11 +27,11 @@
 {#if !loading}
   <main
     transition:fade
-    class="container flex max-w-screen-md flex-col items-stretch
-	gap-4 overflow-hidden p-4 md:flex-row"
+    class="container flex max-w-screen-md flex-col
+	gap-4 overflow-hidden p-4 md:aspect-[1.5] md:flex-row"
   >
-    <Card {card} {setId} {cardId} />
-    <CardInfo {card} />
+    <Card {card} {setId} {cardId} on:revealed={() => (revealed = true)} />
+    <CardInfo {card} {revealed} />
   </main>
 {/if}
 
