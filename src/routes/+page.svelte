@@ -3,9 +3,11 @@
   import { fade } from "svelte/transition";
   import { _ } from "svelte-i18n";
   import sets from "$lib/tarot/cards.json";
+  import { addDrawSession } from "$lib/firebase/store";
   import Card from "$lib/components/card.svelte";
   import CardInfo from "$lib/components/card-info.svelte";
   import SignIn from "$lib/components/signin-button.svelte";
+  import History from "$lib/components/draw-history.svelte";
 
   let setId = 0;
   let cardId = 0;
@@ -19,6 +21,7 @@
     const card = sets[setId].cards[cardId];
     upright = Math.random() > 0.5;
     console.log(card);
+    // addDrawSession([card], 4);
     loading = false;
   });
 </script>
@@ -28,6 +31,7 @@
 </svelte:head>
 
 <SignIn />
+<History />
 {#if !loading}
   <main
     transition:fade
