@@ -27,9 +27,9 @@
     cardArt.value = 0;
     revealAnimation = anime({
       targets: cardArt,
-      value: 7,
-      duration: 2000,
-      easing: "easeOutQuad",
+      value: 15,
+      duration: 4000,
+      easing: "easeInOutCubic",
       autoplay: false,
       update: function (anim) {
         const turn = Math.floor(cardArt.value);
