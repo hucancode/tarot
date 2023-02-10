@@ -13,9 +13,9 @@
     class="flex grow flex-col items-center border border-gray-600 bg-gray-100 p-4 text-green-800 dark:bg-gray-800 dark:text-green-400"
   >
     <IconUp />
-    <div class="flex items-center h-full w-full grow text-center">
+    <div class="flex h-full w-full grow items-center text-center">
       {#if revealed}
-        <div transition:fade class:dim={!upright} class="w-full h-max">
+        <div transition:fade class:dim={!upright} class="h-max w-full">
           {card.meaning.upright.join(", ")}
         </div>
       {/if}
@@ -38,9 +38,9 @@
   <div
     class="flex grow flex-col items-center border border-gray-600 bg-gray-100 p-4 text-blue-800 dark:bg-gray-800 dark:text-blue-400"
   >
-    <div class="flex items-center h-full w-full grow text-center">
+    <div class="flex h-full w-full grow items-center text-center">
       {#if revealed}
-        <div transition:fade class:dim={!reverse} class="w-full h-max">
+        <div transition:fade class:dim={!reverse} class="h-max w-full">
           {card.meaning.reverse.join(", ")}
         </div>
       {/if}

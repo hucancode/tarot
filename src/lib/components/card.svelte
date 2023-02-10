@@ -7,6 +7,8 @@
   export let cardId;
   export let revealed = false;
 
+  const CARD_BACK = "/cards/0.webp";
+  $: cardFront = `/cards/${setId}-${cardId}.webp`;
   let cardArt;
   let revealAnimation;
   const dispatch = createEventDispatcher();
@@ -17,12 +19,10 @@
   }
 
   onMount(() => {
-    const card_front = `/cards/${setId}-${cardId}.webp`;
     if (revealed) {
       cardArt.src = card_front;
       return;
     }
-    const CARD_BACK = "/cards/0.webp";
     cardArt.src = CARD_BACK;
     cardArt.value = 0;
     revealAnimation = anime({
@@ -38,7 +38,7 @@
           scale = 1 - scale;
         }
         if (Math.floor(turn / 2) % 2 == 1) {
-          cardArt.src = card_front;
+          cardArt.src = cardFront;
         } else {
           cardArt.src = CARD_BACK;
         }
@@ -51,6 +51,10 @@
     });
   });
 </script>
+
+<svelte:head>
+  <link rel="prefetch" href={cardFront} />
+</svelte:head>
 
 <button
   disabled={revealed}
