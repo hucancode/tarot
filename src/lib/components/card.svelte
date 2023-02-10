@@ -21,7 +21,7 @@
   <img
     alt={card.name}
     bind:this={cardArt}
-    class="max-h-full w-auto object-contain"
+    class="h-full w-full object-fill"
     src={`/cards/${setId}-${cardId}.webp`}
   />
 </div>
