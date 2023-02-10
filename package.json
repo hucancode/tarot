@@ -32,7 +32,9 @@
   },
   "type": "module",
   "dependencies": {
+    "@firebase/auth": "^0.21.3",
     "@tailwindcss/typography": "^0.5.9",
-    "animejs": "^3.2.1"
+    "animejs": "^3.2.1",
+    "firebase": "^9.17.1"
   }
 }

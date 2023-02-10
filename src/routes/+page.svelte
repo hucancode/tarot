@@ -5,6 +5,7 @@
   import sets from "$lib/tarot/cards.json";
   import Card from "$lib/components/card.svelte";
   import CardInfo from "$lib/components/card-info.svelte";
+  import SignIn from "$lib/components/signin-button.svelte";
 
   let setId = 0;
   let cardId = 0;
@@ -26,6 +27,7 @@
   <title>Umbala</title>
 </svelte:head>
 
+<SignIn />
 {#if !loading}
   <main
     transition:fade
