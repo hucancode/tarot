@@ -13,12 +13,10 @@
 
   function playAnimation() {
     cardArt.style = "transform: scaleX(0);";
-    console.log(revealAnimation);
     revealAnimation.play();
   }
 
   onMount(() => {
-    console.log(cardArt);
     const card_front = `/cards/${setId}-${cardId}.webp`;
     if (revealed) {
       cardArt.src = card_front;
@@ -34,7 +32,6 @@
       easing: "easeOutQuad",
       autoplay: false,
       update: function (anim) {
-        console.log(cardArt.value);
         const turn = Math.floor(cardArt.value);
         let scale = cardArt.value % 1.0;
         if (turn % 2 == 1) {
