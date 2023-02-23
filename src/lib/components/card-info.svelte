@@ -31,6 +31,11 @@
           ? " (REVERSED)"
           : ""}
       </div>
+    <div class="relative grid place-items-center">
+        <input type="checkbox" id="liked" class="peer appearance-none text-4xl duration-200 text-gray-400 checked:text-red-500 before:content-['❤'] active:scale-75" />
+        <p class="normal-case font-light text-xs absolute -bottom-full w-max opacity-0 duration-200 peer-checked:opacity-100">(this button does nothing 😉)</p>
+        <label for="liked" class="absolute aspect-square origin-center rounded-full border-fuchsia-400 peer-checked:animate-bubble-expand" />
+      </div>
     {:else}
       ???????????
     {/if}
