@@ -53,7 +53,7 @@
 </script>
 
 <svelte:head>
-  <link rel="prefetch" href={cardFront}/>
+  <link rel="prefetch" href={cardFront} />
 </svelte:head>
 
 <button

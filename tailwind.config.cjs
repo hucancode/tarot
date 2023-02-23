@@ -43,19 +43,19 @@ const config = {
         },
         "bubble-expand": {
           "0%": {
-            "width": "2rem",
-            "border-width": "2rem", 
-            "opacity": "1"
+            width: "2rem",
+            "border-width": "2rem",
+            opacity: "1",
           },
           "70%": {
-            "opacity": "1"
+            opacity: "1",
           },
           "100%": {
-            "width": "10rem",
+            width: "10rem",
             "border-width": "0",
-            "opacity": "0"
+            opacity: "0",
           },
-        }
+        },
       },
     },
   },
