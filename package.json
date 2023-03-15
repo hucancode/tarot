@@ -33,6 +33,7 @@
   "type": "module",
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
-    "animejs": "^3.2.1"
+    "animejs": "^3.2.1",
+    "three": "^0.150.1"
   }
 }
