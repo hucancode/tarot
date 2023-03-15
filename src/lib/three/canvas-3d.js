@@ -43,11 +43,11 @@ function destroy() {
 
 async function buildScene() {
   scene = new THREE.Scene();
-  model = await loadModel("empress.gltf");
+  model = await loadModel("empress.glb");
   animator = new THREE.AnimationMixer(model.scene);
   model.scene.traverse(e => {
     if(e.isLight) {
-      e.intensity /= 20;
+      e.intensity /= 30000;
       console.log(e)
     }
   });
@@ -72,25 +72,25 @@ function render() {
 
 function playIntro() {
   const animation = fadeToAction("intro", 0.0);
-  animation.clampWhenFinished = true;
-  animation.setLoop(THREE.LoopOnce);
-  animator.addEventListener("finished", returnToIdle);
-  isZoomingOut = true;
+  if(animation) {
+    animation.clampWhenFinished = true;
+    animation.setLoop(THREE.LoopOnce);
+    animator.addEventListener("finished", returnToIdle);
+  } else {
+    returnToIdle();
+  }
 }
 
 async function returnToIdle() {
   animator.removeEventListener("finished", returnToIdle);
   fadeToAction("idle", 0.25);
-  isZoomingOut = false;
-  isZoomingIn = true;
-  await wait(500);
-  isZoomingIn = false;
 }
 
 function fadeToAction(name, duration) {
-  const animation = animator.clipAction(
-    model.animations.find((e) => e.name === name)
-  );
+  console.log(model.animations);
+  const data = model.animations.find((e) => e.name === name);
+  if(!data) return;
+  const animation = animator.clipAction(data);
   return animation.reset().fadeIn(duration).play();
 }
 
