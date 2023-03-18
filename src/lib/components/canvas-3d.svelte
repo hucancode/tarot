@@ -31,10 +31,7 @@
   }
 </script>
 
-<div class="relative aspect-[2.5/3.5] w-full">
-  <div
-    class="absolute left-1/2 top-1/2 mx-auto aspect-square h-full -translate-x-1/2 -translate-y-1/2 bg-gradient-radial from-gray-300 via-sky-50/0 to-sky-50/0 bg-contain dark:from-gray-300/10 dark:via-gray-900/0 dark:to-gray-900/0"
-  />
+<div class="relative aspect-[2.5/3.5] w-full overflow-hidden">
   <div
     bind:this={loadingCircle}
     class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -60,6 +57,6 @@
       />
     </svg>
   </div>
-  <canvas class="absolute h-full w-full" {id} bind:this={canvas} />
+  <canvas class="h-full w-full" {id} bind:this={canvas} />
 </div>
 

@@ -6,6 +6,7 @@
   export let revealed = false;
   export let upright = true;
   export let reverse = true;
+  const placeholder="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 </script>
 
 <div class="prose flex w-full flex-col gap-4 dark:prose-invert md:w-1/2">
@@ -17,6 +18,10 @@
       {#if revealed}
         <div transition:fade class:dim={!upright} class="h-max w-full">
           {card.meaning.upright.join(", ")}
+        </div>
+      {:else}
+        <div class="h-max w-full invisible">
+          {placeholder}
         </div>
       {/if}
     </div>
@@ -52,12 +57,16 @@
     {/if}
   </h3>
   <div
-    class="flex grow flex-col items-center border border-gray-600 bg-gray-100 p-4 text-blue-800 dark:bg-gray-800 dark:text-blue-400"
+    class="flex grow flex-col items-center border border-gray-600 bg-gray-100 p-4 text-blue-800 dark:bg-gray-800 dark:text-blue-400 min-w-"
   >
     <div class="flex h-full w-full grow items-center text-center">
       {#if revealed}
         <div transition:fade class:dim={!reverse} class="h-max w-full">
           {card.meaning.reverse.join(", ")}
+        </div>
+      {:else}
+        <div class="h-max w-full invisible">
+          {placeholder}
         </div>
       {/if}
     </div>

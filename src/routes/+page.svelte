@@ -5,7 +5,6 @@
   import sets from "$lib/tarot/cards.json";
   import Card from "$lib/components/card.svelte";
   import CardInfo from "$lib/components/card-info.svelte";
-  import Empress from "$lib/components/tarot/arcane/empress.svelte";
 
   let setId = 0;
   let cardId = 0;
@@ -34,7 +33,6 @@
     class="container flex max-w-screen-md flex-col
 	gap-4 overflow-hidden p-4 md:aspect-[1.5] md:flex-row"
   >
-    <Empress />
     <Card {card} {setId} {cardId} on:revealed={() => (revealed = true)} />
     <CardInfo {card} {revealed} {upright} reverse={!upright} />
   </div>

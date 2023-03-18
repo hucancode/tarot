@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { loadModel, wait } from "$lib/utils.js";
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 let camera, scene, renderer, animator, controls;
 let model;
@@ -45,15 +46,34 @@ async function buildScene() {
   scene = new THREE.Scene();
   model = await loadModel("empress.glb");
   animator = new THREE.AnimationMixer(model.scene);
+  const format = ( renderer.capabilities.isWebGL2 ) ? THREE.RedFormat : THREE.LuminanceFormat;
+  const GRADIENT_TONE = 3;
+  const colors = new Uint8Array(GRADIENT_TONE+1);
+  for (let i = 0; i<=GRADIENT_TONE; i++) {
+			colors[i] = (i/GRADIENT_TONE) * 0xffffff;
+	}
+	const gradientMap = new THREE.DataTexture(colors, colors.length, 1, format);
+  gradientMap.needsUpdate = true;
   model.scene.traverse(e => {
+    console.log(e);
+    if(e.isMesh) {
+      let mat = new THREE.MeshToonMaterial();
+      mat.color = e.material.color;
+      mat.gradientMap = gradientMap;
+      e.material = mat;
+    }
     if(e.isLight) {
       e.intensity /= 30000;
-      console.log(e)
+      //e.visible = false;
     }
   });
-  console.log(model.cameras);
+  const ambient = new THREE.AmbientLight(0x777777); // soft white light
+  scene.add(ambient);
+  scene.fog = new THREE.Fog(0x000000, 4, 16);
   camera = model.cameras[0];
-  model.scene.position.z = 0.5;
+  //controls = new OrbitControls(camera, renderer.domElement);
+  //controls.update();
+  // model.scene.position.z = 0.5;
   scene.add(model.scene);
 }
 

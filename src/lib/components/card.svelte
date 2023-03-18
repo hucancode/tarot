@@ -2,6 +2,7 @@
   import { createEventDispatcher } from "svelte";
   import anime from "animejs";
   import { onMount } from "svelte";
+  import Empress from "$lib/components/tarot/arcane/empress.svelte";
   export let card;
   export let setId;
   export let cardId;
@@ -61,5 +62,5 @@
   on:click={playAnimation}
   class="flex aspect-[2.5/3.5] w-full flex-col items-center gap-2 md:w-1/2"
 >
-  <img alt={card.name} class="h-full w-full object-fill" bind:this={cardArt} />
+  <Empress bind:this={cardArt} />
 </button>
