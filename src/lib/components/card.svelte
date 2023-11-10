@@ -13,24 +13,22 @@
   let revealAnimation;
   const dispatch = createEventDispatcher();
 
-  function playAnimation() {
-    cardArt.style = "transform: scaleX(0);";
-    revealAnimation.play();
-  }
-
   onMount(() => {
     if (revealed) {
       cardArt.src = cardFront;
       return;
     }
     cardArt.src = CARD_BACK;
-    cardArt.value = 0;
     revealAnimation = anime({
       targets: cardArt,
       value: 15,
       duration: 4000,
       easing: "easeInOutCubic",
       autoplay: false,
+      begin: function(anim) {
+        cardArt.value = 0;
+        cardArt.style = "transform: scaleX(0);";
+      },
       update: function (anim) {
         const turn = Math.floor(cardArt.value);
         let scale = cardArt.value % 1.0;
@@ -58,7 +56,7 @@
 
 <button
   disabled={revealed}
-  on:click={playAnimation}
+  on:click={revealAnimation.play}
   class="flex aspect-[2.5/3.5] w-full flex-col items-center gap-2 md:w-1/2"
 >
   <img alt={card.name} class="h-full w-full object-fill" bind:this={cardArt} />

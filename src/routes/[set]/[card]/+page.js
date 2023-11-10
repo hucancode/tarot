@@ -1,7 +1,6 @@
 import { error } from "@sveltejs/kit";
 import sets from "$lib/tarot/cards.json";
 
-/** @type {import('./$types').PageLoad} */
 export function load({ params }) {
   for (var i = 0; i < sets.length; i++) {
     const set = sets[i];

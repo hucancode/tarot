@@ -24,7 +24,7 @@
   <h3 class="m-0 px-2 py-4 text-center text-3xl font-bold uppercase">
     {#if revealed}
       <div transition:fade>
-        {upright && !reverse ? "" : reverse && !upright ? "REVERSED " : ""}
+        {reverse && !upright ? "REVERSED " : ""}
         {card.name}
       </div>
       <div class="relative grid place-items-center">
