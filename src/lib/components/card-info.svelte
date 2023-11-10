@@ -24,12 +24,12 @@
   <h3 class="m-0 px-2 py-4 text-center text-3xl font-bold uppercase">
     {#if revealed}
       <div transition:fade>
-        {card.name}
         {upright && !reverse
-          ? " (UPRIGHT)"
+          ? ""
           : reverse && !upright
-          ? " (REVERSED)"
+          ? "REVERSED "
           : ""}
+        {card.name}
       </div>
       <div class="relative grid place-items-center">
         <input

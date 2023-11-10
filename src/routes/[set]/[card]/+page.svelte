@@ -1,5 +1,4 @@
 <script>
-  import { _ } from "svelte-i18n";
   import Card from "$lib/components/card.svelte";
   import CardInfo from "$lib/components/card-info.svelte";
 

@@ -1,5 +1,4 @@
 <script>
-  import { _ } from "svelte-i18n";
   import sets from "$lib/tarot/cards.json";
 </script>
 

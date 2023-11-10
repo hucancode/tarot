@@ -1,7 +1,6 @@
 <script>
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
-  import { _ } from "svelte-i18n";
   import sets from "$lib/tarot/cards.json";
   import Card from "$lib/components/card.svelte";
   import CardInfo from "$lib/components/card-info.svelte";
@@ -15,9 +14,7 @@
   onMount(() => {
     setId = Math.floor(Math.random() * sets.length);
     cardId = Math.floor(Math.random() * sets[setId].cards.length);
-    const card = sets[setId].cards[cardId];
     upright = Math.random() > 0.5;
-    console.log(card);
     loading = false;
   });
 </script>
