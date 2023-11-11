@@ -18,6 +18,7 @@
       cardArt.src = cardFront;
       return;
     }
+    cardArt.value = 0;
     cardArt.src = CARD_BACK;
     revealAnimation = anime({
       targets: cardArt,
@@ -25,11 +26,8 @@
       duration: 4000,
       easing: "easeInOutCubic",
       autoplay: false,
-      begin: function(anim) {
-        cardArt.value = 0;
-        cardArt.style = "transform: scaleX(0);";
-      },
       update: function (anim) {
+        console.log(cardArt.value);
         const turn = Math.floor(cardArt.value);
         let scale = cardArt.value % 1.0;
         if (turn % 2 == 1) {
